@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "ba0330037b4cc826f3efe8bbfc1620b8"
+build_time: [1664393694, 974214000]
+inputs:
+  "/Users/j/StudioProjects/physiotherapy_app/macos/Runner/MainFlutterWindow.swift": [1648486804, 0]
+  "/Users/j/StudioProjects/physiotherapy_app/macos/Runner/AppDelegate.swift": [1648486804, 0]
+  "/Users/j/StudioProjects/physiotherapy_app/macos/Flutter/GeneratedPluginRegistrant.swift": [1664393631, 828748531]
