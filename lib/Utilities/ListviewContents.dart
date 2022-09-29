@@ -15,8 +15,8 @@ class SymptomListviewContents extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(15),
         child: Container(
-          width: 150.0,
-          color: Colors.grey.shade300,
+          width: 135.0,
+          color: Color(0xFFF4F6FA),
           child: Center(
             child: Text(feelings),
           ),

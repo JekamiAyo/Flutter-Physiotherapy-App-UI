@@ -7,8 +7,9 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFFFFFFF),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.fromLTRB(16, 32, 16, 0),
         child: SafeArea(
           child: Column(
             children: [
@@ -34,6 +35,17 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ),
                   Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      boxShadow:[
+                        BoxShadow(
+                          color: Color(0xFF1E59DA).withOpacity(0.1),
+                          spreadRadius: 5,
+                          blurRadius: 6,
+                          offset: Offset(0, 2),
+                        )
+                      ]
+                    ),
                     child: CircleAvatar(
                       radius: 30,
                       backgroundColor: Colors.white,
@@ -143,9 +155,12 @@ class MyHomePage extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   'What are your symptoms?',
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
                   textAlign: TextAlign.left,
                 ),
+              ),
+              SizedBox(
+                height: 25,
               ),
               Container(
                 height: 50.0,
@@ -160,7 +175,7 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 45,
+                height: 35,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -169,7 +184,7 @@ class MyHomePage extends StatelessWidget {
                 children: [
                   Text(
                     'Popular Therapists',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     'See all',
@@ -178,7 +193,7 @@ class MyHomePage extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 30,
+                height: 25,
               ),
               Expanded(
                 child: ListView(
