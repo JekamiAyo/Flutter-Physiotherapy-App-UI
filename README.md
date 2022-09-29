@@ -1,4 +1,4 @@
-# Physiotherapy_app
+# Physiotherapy_app_UI
 
 A new Flutter project which is the UI of a Physiotherapy app
 
